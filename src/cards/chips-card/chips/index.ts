@@ -3,6 +3,7 @@ export { WeatherChip } from "./weather-chip";
 export { BackChip } from "./back-chip";
 export { ActionChip } from "./action-chip";
 export { MenuChip } from "./menu-chip";
+export { SeparatorChip } from "./separator-chip";
 export { TemplateChip } from "./template-chip";
 export { ConditionalChip } from "./conditional-chip";
 export { LightChip } from "./light-chip";

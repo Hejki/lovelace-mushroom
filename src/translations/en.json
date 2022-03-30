@@ -81,6 +81,9 @@
             "weather": {
                 "show_conditions": "Conditions?",
                 "show_temperature": "Temperature?"
+            },
+            "separator": {
+                "fixed_width": "Fixed width"
             }
         },
         "chip": {
@@ -105,6 +108,7 @@
                     "entity": "Entity",
                     "light": "Light",
                     "menu": "Menu",
+                    "separator": "Separator",
                     "template": "Template",
                     "weather": "Weather"
                 }

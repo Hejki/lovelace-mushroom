@@ -97,6 +97,12 @@ const lightChipConfigStruct = object({
     double_tap_action: optional(actionConfigStruct),
 });
 
+const separatorChipConfigStruct = object({
+    type: literal("separator"),
+    fixed_width: optional(string()),
+});
+
+
 const templateChipConfigStruct = object({
     type: literal("template"),
     entity: optional(string()),
@@ -126,6 +132,8 @@ const chipsConfigStruct = dynamic<any>((value) => {
                 return conditionChipConfigStruct;
             case "light":
                 return lightChipConfigStruct;
+            case "separator":
+                return separatorChipConfigStruct;
             case "template":
                 return templateChipConfigStruct;
         }

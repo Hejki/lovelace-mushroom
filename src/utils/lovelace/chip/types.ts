@@ -61,6 +61,11 @@ export type WeatherChipConfig = {
     show_conditions?: boolean;
 };
 
+export type SeparatorChipConfig = {
+    type: "separator";
+    fixed_width?: string;
+};
+
 export type TemplateChipConfig = {
     type: "template";
     entity?: string;
@@ -100,7 +105,8 @@ export type LovelaceChipConfig =
     | WeatherChipConfig
     | TemplateChipConfig
     | ConditionalChipConfig
-    | LightChipConfig;
+    | LightChipConfig
+    | SeparatorChipConfig;
 
 export const CHIP_LIST: LovelaceChipConfig["type"][] = [
     "action",
@@ -110,6 +116,7 @@ export const CHIP_LIST: LovelaceChipConfig["type"][] = [
     "entity",
     "light",
     "menu",
+    "separator",
     "template",
     "weather",
 ];
